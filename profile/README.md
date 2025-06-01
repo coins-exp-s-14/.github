@@ -3,7 +3,7 @@
 疑似乱数生成・抽出・検出について学びます。
 
 - 乱数検定のリスト
-  * スペクトル検定 (授業で解説します) \
+  * スペクトル検定 \
   線形合同法で生成された疑似乱数に対する検定法。 \
   線形合同法 $`X_{n+1} = (a X_n + c) \ {\rm mod} \ M`$ から生成される疑似乱数列に対して、\
   $`\nu_k = {\rm min} \ \{ |\vec{s}| = \sqrt{s_1^2+s_2^2+ \cdots + s_k^2} \ {\rm with} \ s_1 + a s_2 + a^2 s_3 + \cdots + a^{k-1} s_k = 0 \ {\rm mod} \ M \}`$ \
@@ -11,7 +11,7 @@
   Knuth 1981 によりスペクトル検定の合格の基準として \
   $`\log_2 \nu_k \geq \frac{30}{k} \ (2 \leq k \leq 6) `$ \
   が提案されている。
-  * 高次元均等分布 (授業で解説します) \
+  * 高次元均等分布 \
   まず、1ビット乱数列$`\{ X_n \}`$を用いて、[0,1) 上の$`l`$ビットの2進小数を \
   $`x_t = 0.X_{t+\tau_1} X_{t+\tau_2} \cdots X_{t+\tau_l}`$ \
   と定義する。ここで、$`\tau_1, \tau_2, \cdots, \tau_l`$は互いに異なり、$`t`$とは無関係な定数である。\
@@ -25,7 +25,7 @@
 - 疑似乱数生成のリスト \
 https://en.wikipedia.org/wiki/List_of_random_number_generators \
 出来れば実装してもらいたいリスト
-  * 線形合同法 (授業で解説します) (Lehmer 1951) \
+  * 線形合同法 (Lehmer 1951) \
 $`X_{n+1} = (a X_n + c) \ {\rm mod} \ M`$　
 $`a, c, M`$ は定数なので、色んな数字を入れて確かめてみてください。
   * (余力のある方のみ) メルセンヌツイスター ([Matsumoto and Nishimura 1998](https://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/ARTICLES/mt.pdf))
